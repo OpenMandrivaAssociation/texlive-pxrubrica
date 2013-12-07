@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-pxrubrica
 Version:	20131010
-Release:	3
+Release:	4
 Summary:	TeXLive pxrubrica package
 Group:		Publishing
 URL:		http://tug.org/texlive
