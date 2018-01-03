@@ -1,12 +1,6 @@
-# revision 28494
-# category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-pxrubrica
-Version:	20131010
-Release:	9
+Version:	1.3b
+Release:	1
 Summary:	TeXLive pxrubrica package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -32,21 +26,10 @@ TeXLive pxrubrica package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/platex/pxrubrica/pxrubrica.sty
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/LICENSE
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/README
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/pxrubrica-en.pdf
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/pxrubrica-en.tex
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/pxrubrica.pdf
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/sample/test-jlreq.pdf
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/sample/test-jlreq.tex
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/sample/test-sf.pdf
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/sample/test-sf.tex
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/sample/test-toc.pdf
-%doc %{_texmfdistdir}/doc/platex/pxrubrica/sample/test-toc.tex
+%{_texmfdistdir}/tex/platex/pxrubrica
+%doc %{_texmfdistdir}/doc/platex/pxrubrica
 #- source
-%doc %{_texmfdistdir}/source/platex/pxrubrica/pxrubrica.dtx
-%doc %{_texmfdistdir}/source/platex/pxrubrica/pxrubrica.ins
+%doc %{_texmfdistdir}/source/platex/pxrubrica
 
 #-----------------------------------------------------------------------
 %prep
