@@ -1,6 +1,6 @@
 Name:		texlive-pxrubrica
-Version:	1.3b
-Release:	2
+Version:	1.3c
+Release:	1
 Summary:	TeXLive pxrubrica package
 Group:		Publishing
 URL:		http://tug.org/texlive
