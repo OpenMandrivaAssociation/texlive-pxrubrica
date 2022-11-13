@@ -1,13 +1,13 @@
 Name:		texlive-pxrubrica
-Version:	1.3c
+Version:	64072
 Release:	1
 Summary:	TeXLive pxrubrica package
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxrubrica.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxrubrica.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxrubrica.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxrubrica.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxrubrica.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxrubrica.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -17,12 +17,12 @@ Requires(post):	texlive-kpathsea
 TeXLive pxrubrica package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -33,7 +33,8 @@ TeXLive pxrubrica package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
